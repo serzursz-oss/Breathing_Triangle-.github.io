@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing Triangle — Методики Дыхания</title>
+    <style>
+        body { background-color: #121212; color: #FFFFFF; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; text-align: center; padding: 20px; margin: 0; }
+        .triangle { width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 86px solid #6200EE; margin: 30px auto 15px auto; }
+        h1 { margin-top: 10px; font-size: 26px; font-weight: bold; letter-spacing: 0.5px; }
+        .description { font-size: 15px; color: #AAAAAA; max-width: 500px; margin: 0 auto 25px auto; line-height: 1.6; padding: 0 15px; }
+        .store-buttons { margin-bottom: 35px; }
+        .btn-store { display: inline-block; padding: 12px 20px; background-color: #1E1E1E; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; margin: 6px; border: 1px solid #333333; }
+        .preset-group { text-align: left; max-width: 500px; margin: 20px auto 30px auto; background: #1E1E1E; padding: 16px; border-radius: 14px; border: 1px solid #222222; }
+        .group-title { color: #888888; font-size: 12px; font-weight: bold; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #2A2A2A; padding-bottom: 6px; }
+        .preset-item { border-bottom: 1px solid #232323; padding: 12px 0; }
+        .preset-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .preset-item:first-of-type { padding-top: 0; }
+        .preset-name { font-weight: bold; font-size: 16px; color: #00F0FF; }
+        .preset-time { color: #888888; font-size: 14px; margin-left: 4px; }
+        .preset-desc { font-size: 13.5px; color: #CCCCCC; margin-top: 5px; line-height: 1.4; }
+        .lang-section { display: none; }
+        .active { display: block; }
+        h2 { font-size: 20px; margin-top: 30px; color: #FFFFFF; }
+    </style>
+</head>
+<body>
+
+    <div class="triangle"></div>
+    <h1>Breathing Triangle</h1>
+
+    <!-- ================= РУССКИЙ ЯЗЫК ================= -->
+    <div id="lang-ru" class="lang-section active">
+        <p class="description">«Дыхательный треугольник» — эффективный инструмент для контроля состояния нервной системы. Настраивайте три фазы (Вдох, Задержка, Выдох) ползунками в приложении для достижения нужного эффекта.</p>
+        <div class="store-buttons">
+            <a href="https://google.com" class="btn-store">Скачать для Android</a>
+            <a href="#" class="btn-store" onclick="alert('Скоро в App Store!'); return false;">Скачать для iOS</a>
+        </div>
+        <h2>Доступные техники дыхания</h2>
+        
+        <div class="preset-group">
+            <div class="group-title">🧠 ФОКУС И БАЛАНС</div>
+            <div class="preset-item"><span class="preset-name">Классический баланс</span><span class="preset-time">(4 — 4 — 4)</span><div class="preset-desc">Убирает хаос в мыслях, выравнивает баланс кислорода. Отлично для старта работы.</div></div>
+            <div class="preset-item"><span class="preset-name">Глубокий Дзен</span><span class="preset-time">(6 — 6 — 6)</span><div class="preset-desc">Замедленный ритм. Помогает войти в состояние глубокой концентрации и потока.</div></div>
+            <div class="preset-item"><span class="preset-name">Ясный ум</span><span class="preset-time">(5 — 4 — 5)</span><div class="preset-desc">Оптимальный цикл для снятия ментальной усталости в середине дня.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">⚡ ЭНЕРГИЯ И РАЗОГРЕВ</div>
+            <div class="preset-item"><span class="preset-name">Утренний тонус</span><span class="preset-time">(5 — 3 — 2)</span><div class="preset-desc">Активирует нервную систему, помогает быстро проснуться без кофе.</div></div>
+            <div class="preset-item"><span class="preset-name">Огненный треугольник</span><span class="preset-time">(2 — 4 — 2)</span><div class="preset-desc">Быстрый шаг и задержка. Генерирует внутреннее тепло, согревает тело.</div></div>
+            <div class="preset-item"><span class="preset-name">Импульс сил</span><span class="preset-time">(4 — 4 — 2)</span><div class="preset-desc">Мгновенно убирает вялость, лень и возвращает тонус мышцам.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 АНТИСТРЕСС И РЕЛАКС</div>
+            <div class="preset-item"><span class="preset-name">Снятие тревоги</span><span class="preset-time">(4 — 2 — 6)</span><div class="preset-desc">Длинный выдох включает парасимпатику, замедляет пульс и убирает панику.</div></div>
+            <div class="preset-item"><span class="preset-name">Перезагрузка SOS</span><span class="preset-time">(3 — 3 — 6)</span><div class="preset-desc">Помогает быстро взять эмоции под контроль при вспышках гнева или страха.</div></div>
+            <div class="preset-item"><span class="preset-name">Мягкое расслабление</span><span class="preset-time">(5 — 2 — 7)</span><div class="preset-desc">Снимает зажимы в теле и убирает напряжение после тяжелого дня.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🌙 СОН И ВОССТАНОВЛЕНИЕ</div>
+            <div class="preset-item"><span class="preset-name">Глубокий сон</span><span class="preset-time">(4 — 4 — 8)</span><div class="preset-desc">Мощный седативный эффект. Использовать прямо в постели перед сном.</div></div>
+            <div class="preset-item"><span class="preset-name">Вечерний покой</span><span class="preset-time">(4 — 3 — 7)</span><div class="preset-desc">Мягкое замедление мыслей за час до сна для плавной подготовки к отдыху.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🫁 ЗДОРОВЬЕ И ВЫНОСЛИВОСТЬ</div>
+            <div class="preset-item"><span class="preset-name">Объем легких</span><span class="preset-time">(6 — 8 — 4)</span><div class="preset-desc">Тренирует задержку дыхания, увеличивает емкость легких и выносливость.</div></div>
+        </div>
+    </div>
+    <!-- ================= ENGLISH ================= -->
+    <div id="lang-en" class="lang-section">
+        <p class="description">"Breathing Triangle" is a powerful tool to control your nervous system. Adjust three phases (Inhale, Hold, Exhale) using sliders in the app to achieve the desired effect.</p>
+        <div class="store-buttons">
+            <a href="https://google.com" class="btn-store">Download for Android</a>
+            <a href="#" class="btn-store">Download for iOS</a>
+        </div>
+        <h2>Breathing Techniques</h2>
+        
+        <div class="preset-group">
+            <div class="group-title">🧠 FOCUS & BALANCE</div>
+            <div class="preset-item"><span class="preset-name">Classic Balance</span><span class="preset-time">(4 — 4 — 4)</span><div class="preset-desc">Clears mind clutter, balances oxygen levels. Great before work or coding.</div></div>
+            <div class="preset-item"><span class="preset-name">Deep Zen</span><span class="preset-time">(6 — 6 — 6)</span><div class="preset-desc">Slower rhythm. Helps you enter a deep state of concentration and flow.</div></div>
+            <div class="preset-item"><span class="preset-name">Clear Mind</span><span class="preset-time">(5 — 4 — 5)</span><div class="preset-desc">Optimal mid-day cycle to relieve mental fatigue and stress.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">⚡ ENERGY & WARM UP</div>
+            <div class="preset-item"><span class="preset-name">Morning Boost</span><span class="preset-time">(5 — 3 — 2)</span><div class="preset-desc">Activates the nervous system. Wake up quickly without caffeine.</div></div>
+            <div class="preset-item"><span class="preset-name">Fire Triangle</span><span class="preset-time">(2 — 4 — 2)</span><div class="preset-desc">Fast pace with a long hold. Generates core heat to warm up your body.</div></div>
+            <div class="preset-item"><span class="preset-name">Energy Impulse</span><span class="preset-time">(4 — 4 — 2)</span><div class="preset-desc">Instantly removes drowsiness, boosts muscle tone and alertness.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 ANTI-STRESS & RELAX</div>
+            <div class="preset-item"><span class="preset-name">Anxiety Relief</span><span class="preset-time">(4 — 2 — 6)</span><div class="preset-desc">A prolonged exhale activates parasympathetic response, slowing heart rate.</div></div>
+            <div class="preset-item"><span class="preset-name">SOS Reset</span><span class="preset-time">(3 — 3 — 6)</span><div class="preset-desc">Quickly control your emotions during sudden bursts of anger or fear.</div></div>
+            <div class="preset-item"><span class="preset-name">Soft Relaxation</span><span class="preset-time">(5 — 2 — 7)</span><div class="preset-desc">Releases body tension and mental stress after a long, exhausting day.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🌙 SLEEP & RECOVERY</div>
+            <div class="preset-item"><span class="preset-name">Deep Sleep</span><span class="preset-time">(4 — 4 — 8)</span><div class="preset-desc">Strong sedative effect. Practice directly in bed before sleeping.</div></div>
+            <div class="preset-item"><span class="preset-name">Evening Calm</span><span class="preset-time">(4 — 3 — 7)</span><div class="preset-desc">Softly winds down your thoughts an hour before bed for a smooth sleep.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🫁 HEALTH & ENDURANCE</div>
+            <div class="preset-item"><span class="preset-name">Lung Capacity</span><span class="preset-time">(6 — 8 — 4)</span><div class="preset-desc">Trains breath-holding capacity, improves lung volume and stamina.</div></div>
+        </div>
+    </div>
+
+    <!-- ================= ESPAÑOL ================= -->
+    <div id="lang-es" class="lang-section">
+        <p class="description">"Breathing Triangle" es una herramienta potente para controlar tu sistema nervioso. Ajusta las tres fases (Inhalación, Retención, Exhalación) con los deslizadores de la app.</p>
+        <div class="store-buttons">
+            <a href="https://google.com" class="btn-store">Descargar para Android</a>
+            <a href="#" class="btn-store">Descargar para iOS</a>
+        </div>
+        <h2>Técnicas de Respiración</h2>
+        
+        <div class="preset-group">
+            <div class="group-title">🧠 ENFOQUE Y BALANCE</div>
+            <div class="preset-item"><span class="preset-name">Equilibrio Clásico</span><span class="preset-time">(4 — 4 — 4)</span><div class="preset-desc">Elimina el caos mental, equilibra el oxígeno. Ideal para empezar a trabajar.</div></div>
+            <div class="preset-item"><span class="preset-name">Zen Profundo</span><span class="preset-time">(6 — 6 — 6)</span><div class="preset-desc">Ritmo lento. Te ayuda a entrar en un estado de profunda concentración.</div></div>
+            <div class="preset-item"><span class="preset-name">Mente Clara</span><span class="preset-time">(5 — 4 — 5)</span><div class="preset-desc">Ciclo óptimo a mitad del día para aligerar la fatiga mental.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">⚡ ENERGÍA Y CALOR</div>
+            <div class="preset-item"><span class="preset-name">Tono Matutino</span><span class="preset-time">(5 — 3 — 2)</span><div class="preset-desc">Activa el sistema nervioso. Despierta rápidamente sin café.</div></div>
+            <div class="preset-item"><span class="preset-name">Triángulo de Fuego</span><span class="preset-time">(2 — 4 — 2)</span><div class="preset-desc">Paso rápido y retención larga. Genera calor interno en el cuerpo.</div></div>
+            <div class="preset-item"><span class="preset-name">Impulso de Fuerza</span><span class="preset-time">(4 — 4 — 2)</span><div class="preset-desc">Elimina al instante la pereza y devuelve el tono a tus músculos.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 ANTIESTRÉS Y RELAJACIÓN</div>
+            <div class="preset-item"><span class="preset-name">Alivio de Ansiedad</span><span class="preset-time">(4 — 2 — 6)</span><div class="preset-desc">La exhalación larga activa el sistema parasimpático, calmando el pulso.</div></div>
+            <div class="preset-item"><span class="preset-name">Reiniciar SOS</span><span class="preset-time">(3 — 3 — 6)</span><div class="preset-desc">Controla tus emociones rápidamente durante ataques de ira o miedo.</div></div>
+            <div class="preset-item"><span class="preset-name">Relajación Suave</span><span class="preset-time">(5 — 2 — 7)</span><div class="preset-desc">Elimina las tensiones físicas y el estrés tras un día agotador.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🌙 SUEÑO Y RECUPERACIÓN</div>
+            <div class="preset-item"><span class="preset-name">Sueño Profundo</span><span class="preset-time">(4 — 4 — 8)</span><div class="preset-desc">Fuerte efecto sedante. Practícalo directamente en la cama antes de dormir.</div></div>
+            <div class="preset-item"><span class="preset-name">Calma Nocturna</span><span class="preset-time">(4 — 3 — 7)</span><div class="preset-desc">Relaja tus pensamientos una hora antes de dormir para descansar mejor.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🫁 SALUD Y RESISTENCIA</div>
+            <div class="preset-item"><span class="preset-name">Capacidad Pulmonar</span><span class="preset-time">(6 — 8 — 4)</span><div class="preset-desc">Entrena la retención de aire, mejorando el volumen pulmonar y la estamina.</div></div>
+        </div>
+    </div>
+    <!-- ================= FRANÇAIS ================= -->
+    <div id="lang-fr" class="lang-section">
+        <p class="description">"Breathing Triangle" est un outil puissant pour contrôler votre système nerveux. Ajustez les trois phases (Inspiration, Rétention, Expiration) via l'application.</p>
+        <div class="store-buttons">
+            <a href="https://google.com" class="btn-store">Télécharger pour Android</a>
+            <a href="#" class="btn-store">Télécharger pour iOS</a>
+        </div>
+        <h2>Techniques de Respiration</h2>
+        
+        <div class="preset-group">
+            <div class="group-title">🧠 FOCUS & ÉQUILIBRE</div>
+            <div class="preset-item"><span class="preset-name">Équilibre Classique</span><span class="preset-time">(4 — 4 — 4)</span><div class="preset-desc">Élimine le chaos mental, équilibre l'oxygène. Idéal avant le travail.</div></div>
+            <div class="preset-item"><span class="preset-name">Zen Profundo</span><span class="preset-time">(6 — 6 — 6)</span><div class="preset-desc">Rythme ralenti. Aide à entrer dans un état de concentration profonde.</div></div>
+            <div class="preset-item"><span class="preset-name">Esprit Clair</span><span class="preset-time">(5 — 4 — 5)</span><div class="preset-desc">Cycle de milieu de journée pour soulager efficacement la fatigue mentale.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">⚡ ÉNERGIE & CHAUFFAGE</div>
+            <div class="preset-item"><span class="preset-name">Tonus Matinal</span><span class="preset-time">(5 — 3 — 2)</span><div class="preset-desc">Active le système nerveux. Réveillez-vous rapidement sans caféine.</div></div>
+            <div class="preset-item"><span class="preset-name">Triangle de Feu</span><span class="preset-time">(2 — 4 — 2)</span><div class="preset-desc">Cadence rapide et longue rétention. Génère de la chaleur interne.</div></div>
+            <div class="preset-item"><span class="preset-name">Impulsion de Force</span><span class="preset-time">(4 — 4 — 2)</span><div class="preset-desc">Élimine instantanément la somnolence et redonne du tonus aux muscles.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 ANTI-STRESS & RELAX</div>
+            <div class="preset-item"><span class="preset-name">Anti-Anxiété</span><span class="preset-time">(4 — 2 — 6)</span><div class="preset-desc">L'expiration longue active le système parasympathique, calmant le pouls.</div></div>
+            <div class="preset-item"><span class="preset-name">Réinitialisation SOS</span><span class="preset-time">(3 — 3 — 6)</span><div class="preset-desc">Maîtrisez rapidement vos émotions lors de crises de colère ou de peur.</div></div>
+            <div class="preset-item"><span class="preset-name">Relaxation Douce</span><span class="preset-time">(5 — 2 — 7)</span><div class="preset-desc">Relâche les tensions physiques et le stress après une journée épuisante.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🌙 SOMMEIL & RÉCUPÉRATION</div>
+            <div class="preset-item"><span class="preset-name">Sommeil Profond</span><span class="preset-time">(4 — 4 — 8)</span><div class="preset-desc">Fort effet sédatif. À pratiquer directement au lit avant de dormir.</div></div>
+            <div class="preset-item"><span class="preset-name">Calme du Soir</span><span class="preset-time">(4 — 3 — 7)</span><div class="preset-desc">Apaise les pensées une heure avant le coucher pour préparer la nuit.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🫁 SANTÉ & ENDURANCE</div>
+            <div class="preset-item"><span class="preset-name">Capacité Pulmonaire</span><span class="preset-time">(6 — 8 — 4)</span><div class="preset-desc">Entraîne la rétention d'air, améliorant le volume pulmonaire et l'endurance.</div></div>
+        </div>
+    </div>
+
+    <!-- ================= 中文 (CHINESE) ================= -->
+    <div id="lang-zh" class="lang-section">
+        <p class="description">“呼吸模式”是一个调节神经系统的强有力工具。可在应用内通过滑动条精确控制吸气、抱气和呼气三个阶段，轻松达到预期效果。</p>
+        <div class="store-buttons">
+            <a href="https://google.com" class="btn-store">下载 Android 版</a>
+            <a href="#" class="btn-store">下载 iOS 版</a>
+        </div>
+        <h2>精选呼吸模式</h2>
+        
+        <div class="preset-group">
+            <div class="group-title">🧠 专注与平衡</div>
+            <div class="preset-item"><span class="preset-name">经典平衡模式</span><span class="preset-time">(4 — 4 — 4)</span><div class="preset-desc">消除杂念，平衡血氧水平。非常适合开启工作或编程前使用。</div></div>
+            <div class="preset-item"><span class="preset-name">深度禅定</span><span class="preset-time">(6 — 6 — 6)</span><div class="preset-desc">极为舒缓的节奏。助您快速进入深度专注和“心流”状态。</div></div>
+            <div class="preset-item"><span class="preset-name">清醒头脑</span><span class="preset-time">(5 — 4 — 5)</span><div class="preset-desc">午间黄金循环，迅速缓解大脑疲劳，恢复清晰思维。</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">⚡ 能量与热身</div>
+            <div class="preset-item"><span class="preset-name">晨间唤醒</span><span class="preset-time">(5 — 3 — 2)</span><div class="preset-desc">激活中枢神经。无需咖啡，即可快速摆脱困意，迎接清晨。</div></div>
+            <div class="preset-item"><span class="preset-name">烈火三角</span><span class="preset-time">(2 — 4 — 2)</span><div class="preset-desc">快吸快呼并配合长屏气。迅速提升核心体温，让身体暖和起来。</div></div>
+            <div class="preset-item"><span class="preset-name">动力爆发</span><span class="preset-time">(4 — 4 — 2)</span><div class="preset-desc">瞬间驱散身体的空虚与懈怠，让肌肉重新恢复紧绷与活力。</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 抗压与放松</div>
+            <div class="preset-item"><span class="preset-name">焦虑缓解</span><span class="preset-time">(4 — 2 — 6)</span><div class="preset-desc">通过拉长呼气来激活副交感神经，从而放缓心率，平复恐慌。</div></div>
+            <div class="preset-item"><span class="preset-name">急救重启 (SOS)</span><span class="preset-time">(3 — 3 — 6)</span><div class="preset-desc">在愤怒、极度焦虑或恐惧爆发时迅速拿回情绪主导权。</div></div>
+            <div class="preset-item"><span class="preset-name">身心轻度放松</span><span class="preset-time">(5 — 2 — 7)</span><div class="preset-desc">彻底卸下身体的防备，有效舒缓一整天堆积下来的精神压力。</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🌙 睡眠与恢复</div>
+            <div class="preset-item"><span class="preset-name">深度入眠</span><span class="preset-time">(4 — 4 — 8)</span><div class="preset-desc">具有强效安神作用。建议临入睡前直接躺在床上练习。</div></div>
+            <div class="preset-item"><span class="preset-name">夜幕静谧</span><span class="preset-time">(4 — 3 — 7)</span><div class="preset-desc">睡前一小时轻柔理清思绪，平稳过渡到休息状态。</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🫁 健康与耐力</div>
+            <div class="preset-item"><span class="preset-name">肺活量拓展</span><span class="preset-time">(6 — 8 — 4)</span><div class="preset-desc">深度锻炼屏气极限，有效扩大肺容积，提高机体耐缺氧能力。</div></div>
+        </div>
+    </div>
+
+    <!-- УМНЫЙ СКРИПТ ОПРЕДЕЛЕНИЯ ЯЗЫКА -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang') || 'ru';
+        
+        document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+        const activeSection = document.getElementById('lang-' + lang);
+        if (activeSection) {
+            activeSection.classList.add('active');
+            document.title = lang === 'ru' ? 'Методики Дыхания' : 'Breathing Techniques';
+        } else {
+            document.getElementById('lang-ru').classList.add('active');
+        }
+    </script>
+</body>
+</html>
