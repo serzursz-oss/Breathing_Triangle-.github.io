@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing Triangle</title>
+    <style>
+        body { background-color: #121212; color: #FFFFFF; font-family: sans-serif; text-align: center; padding: 20px; margin: 0; }
+        .triangle { width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 86px solid #6200EE; margin: 30px auto 15px auto; }
+        h1 { font-size: 26px; font-weight: bold; }
+        .description { font-size: 15px; color: #AAAAAA; max-width: 500px; margin: 0 auto 25px auto; line-height: 1.6; }
+        .btn-store { display: inline-block; padding: 12px 20px; background-color: #1E1E1E; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: bold; margin: 6px; border: 1px solid #333333; }
+        .preset-group { text-align: left; max-width: 500px; margin: 20px auto; background: #1E1E1E; padding: 16px; border-radius: 14px; border: 1px solid #222222; }
+        .group-title { color: #888888; font-size: 12px; font-weight: bold; border-bottom: 1px solid #2A2A2A; padding-bottom: 6px; margin-bottom: 12px; }
+        .preset-item { border-bottom: 1px solid #232323; padding: 10px 0; }
+        .preset-item:last-child { border-bottom: none; }
+        .preset-name { font-weight: bold; color: #00F0FF; }
+        .preset-time { color: #888888; font-size: 14px; margin-left: 4px; }
+        .preset-desc { font-size: 13.5px; color: #CCCCCC; margin-top: 5px; }
+        .lang-section { display: none; }
+        .active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="triangle"></div>
+    <h1>Breathing Triangle</h1>
+
+    <!-- РУССКИЙ -->
+    <div id="lang-ru" class="lang-section active">
+        <p class="description">«Дыхательный треугольник» — эффективный инструмент для контроля состояния нервной системы. Настраивайте три фазы (Вдох, Задержка, Выдох) ползунками в приложении.</p>
+        <div class="preset-group">
+            <div class="group-title">🧠 ФОКУС И БАЛАНС</div>
+            <div class="preset-item">
+                <span class="preset-name">Классический баланс</span><span class="preset-time">(4 — 4 — 4)</span>
+                <div class="preset-desc">Убирает хаос в мыслях, выравнивает баланс углекислого газа. Отлично для работы.</div>
+            </div>
+            <div class="preset-item">
+                <span class="preset-name">Глубокий Дзен</span><span class="preset-time">(6 — 6 — 6)</span>
+                <div class="preset-desc">Замедленный ритм. Помогает войти в состояние глубокой концентрации.</div>
+            </div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 АНТИСТРЕСС И РЕЛАКС</div>
+            <div class="preset-item">
+                <span class="preset-name">Снятие тревоги</span><span class="preset-time">(4 — 2 — 6)</span>
+                <div class="preset-desc">Длинный выдох замедляет пульс, успокаивает сердцебиение и убирает панику.</div>
+            </div>
+            <div class="preset-item">
+                <span class="preset-name">Глубокий сон</span><span class="preset-time">(4 — 4 — 8)</span>
+                <div class="preset-desc">Мощный расслабляющий эффект. Использовать в постели перед сном.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="lang-en" class="lang-section">
+        <p class="description">"Breathing Triangle" is a powerful tool to control your nervous system. Adjust Inhale, Hold, and Exhale phases inside the app.</p>
+        <div class="preset-group">
+            <div class="group-title">🧠 FOCUS & BALANCE</div>
+            <div class="preset-item">
+                <span class="preset-name">Classic Balance</span><span class="preset-time">(4 — 4 — 4)</span>
+                <div class="preset-desc">Clears mind clutter, balances oxygen levels. Great before work or coding.</div>
+            </div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 ANTI-STRESS & RELAX</div>
+            <div class="preset-item">
+                <span class="preset-name">Anxiety Relief</span><span class="preset-time">(4 — 2 — 6)</span>
+                <div class="preset-desc">A prolonged exhale activates parasympathetic response, slowing heart rate.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang') || 'ru';
+        document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+        const activeSection = document.getElementById('lang-' + lang);
+        if (activeSection) activeSection.classList.add('active');
+        else document.getElementById('lang-ru').classList.add('active');
+    </script>
+</body>
+</html>
