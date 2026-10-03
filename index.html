@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing Triangle — Методики Дыхания</title>
+    <style>
+        body { background-color: #121212; color: #FFFFFF; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; text-align: center; padding: 20px; margin: 0; }
+        .triangle { width: 0; height: 0; border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 86px solid #6200EE; margin: 30px auto 15px auto; }
+        h1 { margin-top: 10px; font-size: 26px; font-weight: bold; letter-spacing: 0.5px; }
+        .description { font-size: 15px; color: #AAAAAA; max-width: 500px; margin: 0 auto 25px auto; line-height: 1.6; padding: 0 15px; }
+        .store-buttons { margin-bottom: 35px; }
+        .btn-store { display: inline-block; padding: 12px 20px; background-color: #1E1E1E; color: #FFFFFF; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; margin: 6px; border: 1px solid #333333; }
+        .preset-group { text-align: left; max-width: 500px; margin: 20px auto 30px auto; background: #1E1E1E; padding: 16px; border-radius: 14px; border: 1px solid #222222; }
+        .group-title { color: #888888; font-size: 12px; font-weight: bold; letter-spacing: 1px; margin-bottom: 12px; border-bottom: 1px solid #2A2A2A; padding-bottom: 6px; }
+        .preset-item { border-bottom: 1px solid #232323; padding: 12px 0; }
+        .preset-item:last-child { border-bottom: none; padding-bottom: 0; }
+        .preset-item:first-of-type { padding-top: 0; }
+        .preset-name { font-weight: bold; font-size: 16px; color: #00F0FF; }
+        .preset-time { color: #888888; font-size: 14px; margin-left: 4px; }
+        .preset-desc { font-size: 13.5px; color: #CCCCCC; margin-top: 5px; line-height: 1.4; }
+        .lang-section { display: none; }
+        .active { display: block; }
+        h2 { font-size: 20px; margin-top: 30px; color: #FFFFFF; }
+    </style>
+</head>
+<body>
+
+    <div class="triangle"></div>
+    <h1>Breathing Triangle</h1>
+
+    <!-- ================= РУССКИЙ ЯЗЫК ================= -->
+    <div id="lang-ru" class="lang-section active">
+        <p class="description">«Дыхательный треугольник» — эффективный инструмент для контроля состояния нервной системы. Настраивайте три фазы (Вдох, Задержка, Выдох) ползунками в приложении для достижения нужного эффекта.</p>
+        <div class="store-buttons">
+            <a href="https://google.com" class="btn-store">Скачать для Android</a>
+            <a href="#" class="btn-store" onclick="alert('Скоро в App Store!'); return false;">Скачать для iOS</a>
+        </div>
+        <h2>Доступные техники дыхания</h2>
+        
+        <div class="preset-group">
+            <div class="group-title">🧠 ФОКУС И БАЛАНС</div>
+            <div class="preset-item"><span class="preset-name">Классический баланс</span><span class="preset-time">(4 — 4 — 4)</span><div class="preset-desc">Убирает хаос в мыслях, выравнивает баланс кислорода. Отлично для старта работы.</div></div>
+            <div class="preset-item"><span class="preset-name">Глубокий Дзен</span><span class="preset-time">(6 — 6 — 6)</span><div class="preset-desc">Замедленный ритм. Помогает войти в состояние глубокой концентрации и потока.</div></div>
+            <div class="preset-item"><span class="preset-name">Ясный ум</span><span class="preset-time">(5 — 4 — 5)</span><div class="preset-desc">Оптимальный цикл для снятия ментальной усталости в середине дня.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">⚡ ЭНЕРГИЯ И РАЗОГРЕВ</div>
+            <div class="preset-item"><span class="preset-name">Утренний тонус</span><span class="preset-time">(5 — 3 — 2)</span><div class="preset-desc">Активирует нервную систему, помогает быстро проснуться без кофе.</div></div>
+            <div class="preset-item"><span class="preset-name">Огненный треугольник</span><span class="preset-time">(2 — 4 — 2)</span><div class="preset-desc">Быстрый шаг и задержка. Генерирует внутреннее тепло, согревает тело.</div></div>
+            <div class="preset-item"><span class="preset-name">Импульс сил</span><span class="preset-time">(4 — 4 — 2)</span><div class="preset-desc">Мгновенно убирает вялость, лень и возвращает тонус мышцам.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🧘 АНТИСТРЕСС И РЕЛАКС</div>
+            <div class="preset-item"><span class="preset-name">Снятие тревоги</span><span class="preset-time">(4 — 2 — 6)</span><div class="preset-desc">Длинный выдох включает парасимпатику, замедляет пульс и убирает панику.</div></div>
+            <div class="preset-item"><span class="preset-name">Перезагрузка SOS</span><span class="preset-time">(3 — 3 — 6)</span><div class="preset-desc">Помогает быстро взять эмоции под контроль при вспышках гнева или страха.</div></div>
+            <div class="preset-item"><span class="preset-name">Мягкое расслабление</span><span class="preset-time">(5 — 2 — 7)</span><div class="preset-desc">Снимает зажимы в теле и убирает напряжение после тяжелого дня.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🌙 СОН И ВОССТАНОВЛЕНИЕ</div>
+            <div class="preset-item"><span class="preset-name">Глубокий сон</span><span class="preset-time">(4 — 4 — 8)</span><div class="preset-desc">Мощный седативный эффект. Использовать прямо в постели перед сном.</div></div>
+            <div class="preset-item"><span class="preset-name">Вечерний покой</span><span class="preset-time">(4 — 3 — 7)</span><div class="preset-desc">Мягкое замедление мыслей за час до сна для плавной подготовки к отдыху.</div></div>
+        </div>
+        <div class="preset-group">
+            <div class="group-title">🫁 ЗДОРОВЬЕ И ВЫНОСЛИВОСТЬ</div>
+            <div class="preset-item"><span class="preset-name">Объем легких</span><span class="preset-time">(6 — 8 — 4)</span><div class="preset-desc">Тренирует задержку дыхания, увеличивает емкость легких и выносливость.</div></div>
+        </div>
+    </div>
